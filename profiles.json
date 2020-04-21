@@ -1,0 +1,96 @@
+{
+	"expats": {
+		"webpageType": "static",
+		"flat": {
+			"sale": {
+				"link": "https://www.expats.cz/praguerealestate/for-sale/flats/?page=1",
+				"selectors": {
+					"link": ["dd.thumb", "a::attr(href)"],
+					"nextPage": "//li/a[contains(text(), \"next\")]/@href",
+					"location": "//*[@id=\"offer-properties\"]/div[2]/p[1]/strong/text()",
+					"price": "//*[@id=\"offer-properties\"]/div[1]/p[1]/strong/text()",
+					"size": "//*[@id=\"offer-properties\"]/div[2]/p[3]/strong/text()"
+				}
+			},
+			"rent": {
+				"link": "https://www.expats.cz/praguerealestate/for-rent/flats/?page=1",
+				"selectors": {
+					"link": ["dd.thumb", "a::attr(href)"],
+					"nextPage": "//li/a[contains(text(), \"next\")]/@href",
+					"location": "//*[@id=\"offer-properties\"]/div[2]/p[1]/strong/text()",
+					"price": "//*[@id=\"offer-properties\"]/div[1]/p[1]/strong/text()",
+					"size": "//*[@id=\"offer-properties\"]/div[2]/p[3]/strong/text()"
+				}
+			}
+		},
+		"house": {
+			"sale": {
+				"link": "https://www.expats.cz/praguerealestate/for-sale/houses/?page=1",
+				"selectors": {
+					"link": ["dd.thumb", "a::attr(href)"],
+					"nextPage": "//li/a[contains(text(), \"next\")]/@href",
+					"location": "//*[@id=\"offer-properties\"]/div[2]/p[1]/strong/text()",
+					"price": "//*[@id=\"offer-properties\"]/div[1]/p[1]/strong/text()",
+					"size": "//*[@id=\"offer-properties\"]/div[2]/p[3]/strong/text()"
+				}
+			},
+			"rent": {
+				"link": "https://www.expats.cz/praguerealestate/for-rent/houses/?page=1",
+				"selectors": {
+					"link": ["dd.thumb", "a::attr(href)"],
+					"nextPage": "//li/a[contains(text(), \"next\")]/@href",
+					"location": "//*[@id=\"offer-properties\"]/div[2]/p[1]/strong/text()",
+					"price": "//*[@id=\"offer-properties\"]/div[1]/p[1]/strong/text()",
+					"size": "//*[@id=\"offer-properties\"]/div[2]/p[3]/strong/text()"
+				}
+			}
+		}
+	},
+	"sreality": {
+		"webpageType": "dynamic",
+		"flat": {
+			"sale": {
+				"link": "https://www.sreality.cz/hledani/prodej/byty?strana=1",
+				"selectors": {
+					"link": ["div.text-wrap", "a.title ::attr(href)"],
+					"nextPage": "//*[@id=\"page-layout\"]/div[2]/div[2]/div[4]/div/div/div/div/div[3]/div/div[22]/ul[1]/li[12]/a/@href",
+					"location": "//*[@id=\"page-layout\"]/div[2]/div[2]/div[4]/div/div/div/div/div[4]/h1/span/span[2]/span/text()",
+					"price": "//span[@class=\"norm-price ng-binding\"]/text()",
+					"size": "//label[contains(text(), \"Užitná plocha:\")]/following-sibling::strong[1]/span[1]/text()"
+				}
+			},
+			"rent": {
+				"link": "https://www.sreality.cz/hledani/pronajem/byty?strana=1",
+				"selectors": {
+					"link": ["div.text-wrap", "a.title ::attr(href)"],
+					"nextPage": "//*[@id=\"page-layout\"]/div[2]/div[2]/div[4]/div/div/div/div/div[3]/div/div[22]/ul[1]/li[12]/a/@href",
+					"location": "//*[@id=\"page-layout\"]/div[2]/div[2]/div[4]/div/div/div/div/div[4]/h1/span/span[2]/span/text()",
+					"price": "//span[@class=\"norm-price ng-binding\"]/text()",
+					"size": "//label[contains(text(), \"Užitná plocha:\")]/following-sibling::strong[1]/span[1]/text()"
+				}
+			}
+		},
+		"house": {
+			"sale": {
+				"link": "https://www.sreality.cz/hledani/prodej/domy?strana=1",
+				"selectors": {
+					"link": ["div.text-wrap", "a.title ::attr(href)"],
+					"nextPage": "//*[@id=\"page-layout\"]/div[2]/div[2]/div[4]/div/div/div/div/div[3]/div/div[22]/ul[1]/li[12]/a/@href",
+					"location": "//*[@id=\"page-layout\"]/div[2]/div[2]/div[4]/div/div/div/div/div[4]/h1/span/span[2]/span/text()",
+					"price": "//span[@class=\"norm-price ng-binding\"]/text()",
+					"size": "//label[contains(text(), \"Užitná plocha:\")]/following-sibling::strong[1]/span[1]/text()"
+				}
+			},
+			"rent": {
+				"link": "https://www.sreality.cz/hledani/pronajem/domy?strana=1",
+				"selectors": {
+					"link": ["div.text-wrap", "a.title ::attr(href)"],
+					"nextPage": "//*[@id=\"page-layout\"]/div[2]/div[2]/div[4]/div/div/div/div/div[3]/div/div[22]/ul[1]/li[12]/a/@href",
+					"location": "//*[@id=\"page-layout\"]/div[2]/div[2]/div[4]/div/div/div/div/div[4]/h1/span/span[2]/span/text()",
+					"price": "//span[@class=\"norm-price ng-binding\"]/text()",
+					"size": "//label[contains(text(), \"Užitná plocha:\")]/following-sibling::strong[1]/span[1]/text()"
+				}
+			}
+		}
+	}
+}
